@@ -1,0 +1,16 @@
+target/
+.idea/
+*.iml
+
+dependency-reduced-pom.xml
+
+# Ignore generated files.
+.project
+.settings
+*/.classpath
+*/.factorypath
+*/.project
+*/.settings
+
+# Ignore DS_Store (Mac)
+.DS_Store
