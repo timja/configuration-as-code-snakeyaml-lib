@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.jenkins.configuration-as-code</groupId>
+        <artifactId>snakeyaml-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>..</relativePath>
+    </parent>
+    <groupId>io.jenkins</groupId>
+    <artifactId>configuration-as-code-snakeyaml</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>hpi</packaging>
+
+    <name>Configuration as Code Plugin</name>
+    <description>Manage Jenkins master configuration as code</description>
+    <url>https://github.com/jenkinsci/configuration-as-code-plugin</url>
+
+    <properties>
+        <hpi.pluginChagelogUrl>https://github.com/jenkinsci/configuration-as-code-snakeyaml-plugin/releases</hpi.pluginChagelogUrl>
+    </properties>
+
+    <developers>
+        <developer>
+            <id>casz</id>
+            <name>Joseph Petersen</name>
+        </developer>
+        <developer>
+            <id>timja</id>
+            <name>Tim Jacomb</name>
+        </developer>
+        <developer>
+            <id>oleg_nenashev</id>
+            <name>Oleg Nenashev</name>
+        </developer>
+    </developers>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.jenkins.configuration-as-code</groupId>
+            <artifactId>snakeyaml-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <scm>
+        <connection>scm:git:git://github.com/jenkinsci/configuration-as-code-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:jenkinsci/configuration-as-code-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/configuration-as-code-plugin</url>
+        <tag>${scmTag}</tag>
+    </scm>
+</project>

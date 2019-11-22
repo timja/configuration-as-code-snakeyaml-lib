@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+  This plugin exposes snakeyaml to the configuration-as-code Jenkins plugin.
+</div>
